@@ -41,3 +41,19 @@ Below are the R script names and the corresponding descriptions that can be used
 If you use this methodology, be sure to properly cite the journal article above (https://doi.org/10.1016/j.ecss.2024.108937) and the specific statistical methodologies and references therein. 
 
 Note, the datasets used in this study and available here are collected by the National Estuarine Researach Reserve's System-wide Monitoring Program and can be freely and publicly accessed via http://nerrscdmo.org/. If you would like to reproduce these statistical analyses for a different National Estuarine Research Reserve, you can use that link to specify a particular station and date range. 
+## 数据说明
+
+原始数据需从 NERRS 网站手动下载，详见 `DATA_ISSUE.md`。由于数据缺失，代码运行至数据加载步骤中断，但环境已完整配置。
+
+## 运行步骤（如具备数据）
+
+1. 打开 RStudio 项目
+2. 运行 `renv::restore()` 安装包
+3. 将下载的数据放入 `Input_Files/NOCLCWQ.xlsx`
+4. 依次运行 `scripts/` 中的脚本
+
+## 小组成员贡献
+
+- @刘芸慧：环境配置、代码调试、报告撰写
+- @肖新怡：数据说明、README 修改
+- @周炎：测试环境、提交记录
