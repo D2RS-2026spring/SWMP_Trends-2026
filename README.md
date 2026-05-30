@@ -52,6 +52,24 @@ Note, the datasets used in this study and available here are collected by the Na
 3. 将下载的数据放入 `Input_Files/NOCLCWQ.xlsx`
 4. 依次运行 `scripts/` 中的脚本
 
+## 如何复现
+
+### 前提条件
+- 安装 R 4.0 以上和 RStudio
+- 安装 Git（可选）
+
+### 一键复现
+1. 克隆本仓库到本地
+2. 在 RStudio 中打开 `SWMP_Trends.Rproj`
+3. 运行 `source("run_all.R")` 或手动运行以下步骤：
+   - 安装依赖包：`install.packages(c("tidyverse","lubridate","rmarkdown"))`
+   - 生成模拟数据并分析：运行 `data_preprocessing.R`
+   - 渲染报告：`rmarkdown::render("report.qmd")`
+
+### 结果
+- 报告：`report.html`
+- 趋势图：`temperature_trend.png`（如果生成）
+
 ## 小组成员贡献
 
 - @刘芸慧：环境配置、代码调试、报告撰写
