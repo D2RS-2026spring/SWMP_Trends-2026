@@ -114,3 +114,12 @@ ggplot(annual, aes(Year, Temperature)) +
 - 刘芸慧（组长）：环境配置、代码调试、报告撰写
 - 周炎：测试环境、提交记录
 - 肖新怡：数据说明、README 修改
+
+## 9. 复现本报告
+
+本报告使用 R 和 Quarto 生成。要复现本报告中的所有代码和结果，请：
+1. 安装 R 和 RStudio
+2. 克隆本仓库
+3. 运行 `source("run_all.R")` 或点击 `report.qmd` 中的 Render 按钮
+
+注意：由于原始数据未公开，本报告使用模拟数据演示分析流程。
