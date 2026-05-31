@@ -18,7 +18,6 @@ library(readxl)
 library(ggplot2)
 
 data_clean <- read_excel("data/processed/data_clean.xlsx")
-#source("run_all.R")
 # 画图
 p <- ggplot(data_clean, aes(x = temp, y = do_mgl, color = station)) +
   geom_point(alpha = 0.6) +

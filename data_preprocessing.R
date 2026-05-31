@@ -10,10 +10,10 @@ n <- 800
 # 造模拟数据
 data <- tibble(
   datetimestamp = seq(ymd_hms("2023-01-01 00:00:00"), by = "hour", length.out = n),
-  station = sample(c("sta1","sta2"), n, replace=TRUE),
-  temp = rnorm(n, 20, 3),
-  do_mgl = rnorm(n, 8, 1.5),
-  ph = rnorm(n, 7, 0.4)
+  station = sample(c("sta1", "sta2"), n, replace = TRUE),
+  temp = pmax(pmin(rnorm(n, 20, 3), 35), 0),
+  do_mgl = pmax(rnorm(n, 8, 1.5), 0),
+  ph = pmax(pmin(rnorm(n, 7, 0.4), 9), 5)
 )
 
 # 建文件夹、保存
